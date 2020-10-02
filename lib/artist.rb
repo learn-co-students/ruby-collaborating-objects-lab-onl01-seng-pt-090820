@@ -34,11 +34,9 @@ class Artist
   
   def print_songs
     song_instances = self.songs
-    songs = song_instances.map do |song|
-      # binding.pry
-      song.name
+    song_instances.each do |song|
+      puts song.name
     end
-    print songs
   end 
 
 end
